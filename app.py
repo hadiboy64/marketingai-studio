@@ -6,12 +6,15 @@ st.set_page_config(
     page_icon="📢",
     layout="wide",
 )
+# Secrets se API Key auto-read karna
+api_key = st.secrets.get("GEMINI_API_KEY")
 
 st.sidebar.title("🤖 MarketingAI Config")
-api_key = st.sidebar.text_input(
-    "Enter Gemini API Key:",
-    type="password",
-)
+if api_key:
+    st.sidebar.success("✅ System Ready (API Connected)")
+else:
+    st.sidebar.error("⚠️ API Key not configured in Secrets.")
+
 st.sidebar.info("Built for local small businesses & Pakistani e-commerce brands.")
 
 st.title("📢 MarketingAI Studio")

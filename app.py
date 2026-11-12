@@ -68,7 +68,7 @@ with tab1:
                     """
 
                     response = client.models.generate_content_stream(
-                        model="gemini-3-flash-preview",
+                        model="gemini-3.5-flash",
                         contents=prompt,
                     )
                     st.write_stream(stream_text(response))

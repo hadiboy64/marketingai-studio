@@ -69,7 +69,7 @@ Output format (Keep it brief, engaging, and fast):
 ### 4. 💬 WhatsApp Business Broadcast Message
 """
                     response = client.models.generate_content_stream(
-                        model="gemini-2.5-flash",
+                        model="gemini-3.8-flash",
                         contents=prompt,
                     )
                     st.write_stream(stream_text(response))
@@ -111,7 +111,7 @@ Act as an expert social media content strategist. Create a 30-day content strate
 - Output as a structured Markdown Table with columns: Day | Content Pillar | Content Type | Content Idea | Caption (Roman Urdu/Eng) | CTA
 """
                     response = client.models.generate_content_stream(
-                        model="gemini-2.5-flash",
+                        model="gemini-3.8-flash",
                         contents=calendar_prompt,
                     )
                     st.write_stream(stream_text(response))

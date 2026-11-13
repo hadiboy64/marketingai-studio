@@ -68,7 +68,7 @@ with tab1:
                     """
 
                     response = client.models.generate_content_stream(
-                        model="gemini-2.5-flash",
+                        model="gemini-3.8-flash",
                         contents=prompt,
                     )
                     st.write_stream(stream_text(response))
@@ -109,7 +109,7 @@ with tab2:
                     """
 
                     response = client.models.generate_content_stream(
-                        model="gemini-2.5-flash",
+                        model="gemini-3.8-flash",
                         contents=calendar_prompt,
                     )
                     st.write_stream(stream_text(response))

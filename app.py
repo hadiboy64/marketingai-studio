@@ -116,4 +116,4 @@ Act as an expert social media content strategist. Create a 30-day content strate
                     )
                     st.write_stream(stream_text(response))
                 except Exception as e:
-                    st.error(f"Error generating calendar:
+                    st.error(f"Error generating calendar: {e}")
